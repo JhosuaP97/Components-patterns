@@ -12,8 +12,6 @@ export const useShoppingCart = () => {
     count: number;
     product: Product;
   }) => {
-    console.log({ count });
-
     setShoppingCart((oldShoppingCart) => {
       if (count === 0) {
         const { [product.id]: toDelete, ...rest } = oldShoppingCart;
