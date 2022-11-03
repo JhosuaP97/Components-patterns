@@ -14,8 +14,6 @@ for (const input of formJson) {
   let schema = Yup.string();
 
   for (const rule of input.validations) {
-    console.log(rule);
-
     if (rule.type === "required") {
       schema = schema.required("Este campo es requerido");
     }
